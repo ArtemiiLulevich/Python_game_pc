@@ -1,0 +1,8 @@
+#idea folder 
+**/.idea/*
+
+**.iml
+**.c
+
+**/__pycached__/*
+**/tests/**
