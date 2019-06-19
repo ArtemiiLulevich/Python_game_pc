@@ -20,6 +20,10 @@ for card in cards:
 random.shuffle(deck)
 
 for card in deck:
+    # print(card)
     card.get_card_name()
 
 print('Count of cards in deck is {}'.format(len(deck)))
+
+
+

@@ -15,7 +15,7 @@ class Card:
         self._form = form
         self._colour = colour
         self._value = value
-        self._card_name = form[:2] + value + colour[:2]
+        self._card_name = colour[:2] + form[:2] + value
 
     def get_card_name(self):
         print(self._card_name)
