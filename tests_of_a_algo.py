@@ -16,21 +16,22 @@ def place_check(card_place):
 def find_location_of_card(game_field, card_name):
     x = 0
     y = 0
+    #  y = 1 - for tests
     for line in game_field:
-        try:
+        if card_name in line:
             x = line.index(card_name)
-        except ValueError:
-            print('Not in the list')
-        finally:
+            #  x += 1 - for tests
+            break
+        else:
             y += 1
 
     location_of_card = (x, y)
     return location_of_card
 
 
-field = [[],
-         ['BlTr1'],
-         []]
+field = [['BlCr3', 'ReSq3'],
+         ['BlCi3', 'BlTr1'],
+         ['BlCi2', 'BlTr4']]
 
 deck = ['BlCr3',
         'ReSq3',
